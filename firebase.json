@@ -1,0 +1,9 @@
+{
+  "firebase": "humidii",
+  "public": ".",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}

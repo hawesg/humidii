@@ -1,0 +1,81 @@
+body {
+	background-color: @body-bg;
+	color: @text-color;
+	font-family: @font-family-base;
+	font-size: 	 @font-size-base;
+}
+
+h1 { 
+	font-size: @font-size-h1; 
+}
+h2 { 
+	font-size: @font-size-h2; 
+}
+h3 { 
+	font-size: @font-size-h3; 
+}
+h4 { 
+	font-size: @font-size-h4; 
+}
+h5 { 
+	font-size: @font-size-h5; 
+}
+h6 { 
+	font-size: @font-size-h6; 
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: @font-family-sans-serif;
+	font-weight: 500;
+	color: #333;
+	text-rendering: optimizelegibility;
+}
+
+.heading-alt {
+	font-family: @font-family-serif;
+	font-weight: 700;
+}
+
+.muted {
+	color: @gray-light;
+}
+
+
+a {
+	color: @link-color;
+	&:hover {
+		color: @link-color-hover;
+	}
+	&:visited {
+		color: @link-color-visited;
+	}
+}
+
+.page-header {
+	border-bottom: 1px solid #dedede;
+	color: #999;
+	margin: 0 0 20px;
+	padding: 15px 20px;
+	
+	h1 {
+		margin: 0;
+		font: 300 30px/1 @font-family-sans-serif;
+		display: inline-block;
+	}
+}
+
+pre {
+	background-color: #eee;
+	font-family: @font-family-monospace;
+	.border-radius(2px);
+
+	&.dark {
+		background-color: @brand-inverse;
+		color: #fff;
+	}
+}
